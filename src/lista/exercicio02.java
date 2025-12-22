@@ -16,5 +16,6 @@ public class exercicio02 {
 
         System.out.println("Novo valor int a: " +a);
         System.out.println("Novo valor int b:" +b);
+
     }
 }

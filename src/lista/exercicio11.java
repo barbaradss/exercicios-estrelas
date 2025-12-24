@@ -20,6 +20,7 @@ public class exercicio11 {
                 System.out.println("Terça");
                 break;
             case 4:
+
                 System.out.println("Quarta");
                 break;
             case 5:

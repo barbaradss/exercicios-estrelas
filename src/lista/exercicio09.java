@@ -28,20 +28,14 @@ public class exercicio09 {
             criterios++;
         }
 
-        String classificacao;
-
-        switch (criterios){
-            case 4:
-            case 5:
-                classificacao = "Forte";
-                break;
-            case 3:
-            case 2:
-                classificacao = "Média";
-                break;
-            default:
-                classificacao = "Fraca";
-        }
+        // Gostei do uso do switch/case, mas...
+        // e se fosse adicionado um sexto critério?
+        // a senha seria fraca? Essa é a melhor ordenação das classificações?
+        String classificacao = switch (criterios) {
+            case 4, 5 -> "Forte";
+            case 3, 2 -> "Média";
+            default -> "Fraca";
+        };
         System.out.println("Senha: " + senha);
         System.out.println("Classificação: " + classificacao);
 

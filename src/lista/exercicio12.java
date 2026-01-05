@@ -2,9 +2,10 @@ package lista;
 
 public class exercicio12 {
     public static void main(String[] args) {
-        String entrada = "10 + 4";
+        String entrada = " 10 +   4 ";
 
-        String[] partes = entrada.split(" ");
+        // Formata o calculo, removendo espaços desnecessários (deixa o codigo mais robusto)
+        String[] partes = entrada.trim().replaceAll("\\s+", " ").split(" ");
 
         int valorEsquerdo = Integer.parseInt(partes[0]);
         int valorDireito = Integer.parseInt(partes[2]);
